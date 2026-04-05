@@ -6,7 +6,7 @@ class User(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String)
-    role = Column(String)  # viewer, analyst, admin
+    role = Column(String)  
 
 
 class Transaction(Base):
@@ -14,7 +14,7 @@ class Transaction(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     amount = Column(Float)
-    type = Column(String)  # income / expense
+    type = Column(String) 
     category = Column(String)
     date = Column(String)
     notes = Column(String)
